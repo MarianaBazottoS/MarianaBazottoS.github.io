@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.7;
+    color: #333;
+    background: linear-gradient(135deg, #f9f0ff 0%, #e6e6fa 100%);
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(90deg, #5d26c1 0%, #a17fe0 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(93, 38, 193, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.2rem 0;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.4s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    margin-bottom: 3.5rem;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(93, 38, 193, 0.15);
+    transition: transform 0.4s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #5d26c1;
+    margin-bottom: 1.8rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 3px solid #a17fe0;
+    font-size: 2.2rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(93, 38, 193, 0.2);
+}
+
+#introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom right, white 0%, #f5f0ff 100%);
+}
+
+
+#introducao p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    line-height: 1.8;
+}
+
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.habilidade {
+    background: linear-gradient(135deg, #f0e6ff 0%, #e2d7f9 100%);
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border: 1px solid #e0d0ff;
+    box-shadow: 0 4px 8px rgba(161, 127, 224, 0.2);
+}
+
+.habilidade:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(161, 127, 224, 0.3);
+    background: linear-gradient(135deg, #e6d9ff 0%, #d8c8f9 100%);
+}
+
+.habilidade h3 {
+    color: #6b3fa0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.projeto {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    border: 1px solid #e8deff;
+    position: relative;
+    overflow: hidden;
+}
+
+.projeto::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #a17fe0, #5d26c1);
+}
+
+.projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(93, 38, 193, 0.25);
+}
+
+.projeto h3 {
+    color: #5d26c1;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.projeto p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(90deg, #a17fe0 0%, #6b3fa0 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(161, 127, 224, 0.4);
+}
+
+.projeto a:hover {
+    background: linear-gradient(90deg, #8a63d1 0%, #5d26c1 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 15px rgba(161, 127, 224, 0.6);
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom right, #f9f5ff, #f0e9ff);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(161, 127, 224, 0.2), 0 5px 15px rgba(93, 38, 193, 0.15);
+}
+
+.form-group {
+    margin-bottom: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+    color: #5d26c1;
+    font-size: 1.1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #d0c0e9;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input:focus, textarea:focus {
+    border-color: #a17fe0;
+    box-shadow: 0 0 0 3px rgba(161, 127, 224, 0.3);
+    outline: none;
+}
+
+button {
+    background: linear-gradient(90deg, #8a2be2 0%, #5d26c1 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: block;
+    margin: 2rem auto 0;
+    box-shadow: 0 5px 15px rgba(93, 38, 193, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #7a1ad2 0%, #4a1fa0 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(93, 38, 193, 0.6);
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem;
+    background: linear-gradient(90deg, #5d26c1 0%, #8a2be2 100%);
+    color: white;
+    box-shadow: 0 -4px 12px rgba(93, 38, 193, 0.3);
+    margin-top: 4rem;
+}
+
+.redes-sociais {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.redes-sociais a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.redes-sociais a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .habilidades-container, .projetos-container {
+        grid-template-columns: 1fr;
+    }
+    
+    section {
+        padding: 1.8rem;
+    }
+    
+    form {
+        padding: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}

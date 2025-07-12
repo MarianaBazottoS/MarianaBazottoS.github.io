@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mariana Bazotto</h1>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introducao">
+            <h2>Olá, seja bem vindo ao meu Portfólio</h2>
+            <p>Minha jornada na programação começou com curiosidade e vontade de entender como as coisas funcionavam por trás das telas. Aos poucos, mergulhei em linguagens, lógica e desafios que me ensinaram a pensar de forma estruturada e criativa.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Minhas Habilidades</h2>
+            <div class="habilidades-container">
+                <div class="habilidade">
+                    <h3>HTML</h3>
+                    <p>Conhecimento intermediário</p>
+                </div>
+                <div class="habilidade">
+                    <h3>CSS</h3>
+                    <p>Conhecimento básico</p>
+                </div>
+                <div class="habilidade">
+                    <h3>JavaScript</h3>
+                    <p>Conhecimento intermediário</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-container">
+                <div class="projeto">
+                    <h3>Apresentação sobre CyberSegurança</h3>
+                    <p>Projeto feito para a conscientização</p>
+                    <a href="https://www.canva.com/design/DAGZl-HUByM/zRSQhLxuQoq8mk-2UdfrUw/edit">Ver projeto</a>
+                </div>
+                <div class="projeto">
+                    <h3>Projeto sobre a poluição da água</h3>
+                    <p>Apresentação sobre a poluição da água</p>
+                    <a href="https://www.canva.com/design/DAGSpthtuRE/2_pWrIEjuK2cwJe7TeBLQg/edit">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mariana Bazotto</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
